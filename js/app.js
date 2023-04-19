@@ -33,10 +33,12 @@ function removeFromCart() {
 
             if (typeof displayCart === "function") {
                 displayCart();
+
             }
 
             if (typeof displayCartProducts === "function") {
                 displayCartProducts();
+                displayOrderSummary();
             }
 
             if (cart.length == 0) {
@@ -59,6 +61,7 @@ function clearCart() {
 
         if (typeof displayCartProducts === "function") {
             displayCartProducts();
+            displayOrderSummary();
         }
     });
 };
