@@ -33,7 +33,6 @@ function removeFromCart() {
 
             if (typeof displayCart === "function") {
                 displayCart();
-
             }
 
             if (typeof displayCartProducts === "function") {
